@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "nama": "Warung Nasi Gudeg Bu Sari",
+    "kategori": "makanan",
+    "deskripsi": "Warung gudeg tradisional dengan cita rasa autentik Yogyakarta yang telah berdiri sejak 1985.",
+    "gambar": "https://picsum.photos/400/300?random=1",
+    "lokasi": "Yogyakarta",
+    "kontak": {
+      "whatsapp": "+62812-3456-7890",
+      "email": "gudegbusari@gmail.com",
+      "alamat": "Jl. Malioboro No. 123, Yogyakarta"
+    },
+    "produk": [
+      "Gudeg Ayam",
+      "Gudeg Kambing",
+      "Tahu Bacem",
+      "Tempe Bacem",
+      "Krecek"
+    ],
+    "unggulan": true
+  },
+  {
+    "id": 2,
+    "nama": "Kerajinan Batik Indah",
+    "kategori": "kerajinan",
+    "deskripsi": "Pengrajin batik tulis dan cap dengan motif tradisional dan kontemporer berkualitas tinggi.",
+    "gambar": "https://picsum.photos/400/300?random=2",
+    "lokasi": "Solo",
+    "kontak": {
+      "whatsapp": "+62813-4567-8901",
+      "email": "batikindah@yahoo.com",
+      "alamat": "Jl. Slamet Riyadi No. 456, Solo"
+    },
+    "produk": [
+      "Batik Tulis",
+      "Batik Cap",
+      "Kemeja Batik",
+      "Dress Batik",
+      "Selendang"
+    ],
+    "unggulan": true
+  },
+  {
+    "id": 3,
+    "nama": "Toko Kopi Arabika Gayo",
+    "kategori": "makanan",
+    "deskripsi": "Penjual kopi arabika premium dari dataran tinggi Gayo, Aceh dengan proses roasting terbaik.",
+    "gambar": "https://picsum.photos/400/300?random=3",
+    "lokasi": "Aceh",
+    "kontak": {
+      "whatsapp": "+62814-5678-9012",
+      "email": "kopigayo@gmail.com",
+      "alamat": "Jl. Teuku Umar No. 789, Banda Aceh"
+    },
+    "produk": [
+      "Kopi Arabika Gayo",
+      "Kopi Robusta",
+      "Kopi Bubuk",
+      "Kopi Biji",
+      "Cold Brew"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 4,
+    "nama": "Fashion Hijab Modern",
+    "kategori": "fashion",
+    "deskripsi": "Butik hijab dengan desain modern dan bahan berkualitas untuk wanita muslimah masa kini.",
+    "gambar": "https://picsum.photos/400/300?random=4",
+    "lokasi": "Bandung",
+    "kontak": {
+      "whatsapp": "+62815-6789-0123",
+      "email": "hijabmodern@gmail.com",
+      "alamat": "Jl. Dago No. 321, Bandung"
+    },
+    "produk": ["Hijab Segi Empat", "Hijab Instan", "Gamis", "Tunik", "Khimar"],
+    "unggulan": false
+  },
+  {
+    "id": 5,
+    "nama": "Aplikasi Kasir Digital SmartPOS",
+    "kategori": "teknologi",
+    "deskripsi": "Pengembang aplikasi kasir digital untuk UMKM dengan fitur lengkap dan mudah digunakan.",
+    "gambar": "https://picsum.photos/400/300?random=5",
+    "lokasi": "Jakarta",
+    "kontak": {
+      "whatsapp": "+62816-7890-1234",
+      "email": "smartpos@tech.com",
+      "alamat": "Jl. Sudirman No. 654, Jakarta"
+    },
+    "produk": [
+      "Aplikasi Kasir",
+      "Sistem Inventory",
+      "Laporan Penjualan",
+      "Integrasi Payment",
+      "Training"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 6,
+    "nama": "Jasa Desain Grafis Kreatif",
+    "kategori": "jasa",
+    "deskripsi": "Layanan desain grafis profesional untuk branding, packaging, dan kebutuhan promosi UMKM.",
+    "gambar": "https://picsum.photos/400/300?random=6",
+    "lokasi": "Surabaya",
+    "kontak": {
+      "whatsapp": "+62817-8901-2345",
+      "email": "desainkreatif@gmail.com",
+      "alamat": "Jl. Pemuda No. 987, Surabaya"
+    },
+    "produk": [
+      "Logo Design",
+      "Packaging Design",
+      "Banner",
+      "Brosur",
+      "Social Media Kit"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 7,
+    "nama": "Keripik Singkong Renyah",
+    "kategori": "makanan",
+    "deskripsi": "Produsen keripik singkong dengan berbagai varian rasa yang renyah dan gurih.",
+    "gambar": "https://picsum.photos/400/300?random=7",
+    "lokasi": "Malang",
+    "kontak": {
+      "whatsapp": "+62818-9012-3456",
+      "email": "keripiksingkong@gmail.com",
+      "alamat": "Jl. Veteran No. 234, Malang"
+    },
+    "produk": [
+      "Keripik Original",
+      "Keripik Balado",
+      "Keripik BBQ",
+      "Keripik Keju"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 8,
+    "nama": "Furniture Kayu Jati",
+    "kategori": "kerajinan",
+    "deskripsi": "Pengrajin furniture kayu jati berkualitas tinggi dengan desain klasik dan modern.",
+    "gambar": "https://picsum.photos/400/300?random=8",
+    "lokasi": "Jepara",
+    "kontak": {
+      "whatsapp": "+62819-0123-4567",
+      "email": "furniturejati@yahoo.com",
+      "alamat": "Jl. Kartini No. 567, Jepara"
+    },
+    "produk": [
+      "Meja Makan",
+      "Kursi Tamu",
+      "Lemari Pakaian",
+      "Tempat Tidur",
+      "Rak Buku"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 9,
+    "nama": "Toko Oleh-oleh Khas Bali",
+    "kategori": "makanan",
+    "deskripsi": "Menyediakan berbagai oleh-oleh khas Bali seperti pie susu, dodol, dan keripik buah.",
+    "gambar": "https://picsum.photos/400/300?random=9",
+    "lokasi": "Bali",
+    "kontak": {
+      "whatsapp": "+62820-1234-5678",
+      "email": "olehbali@gmail.com",
+      "alamat": "Jl. Sunset Road No. 88, Denpasar"
+    },
+    "produk": [
+      "Pie Susu",
+      "Dodol Bali",
+      "Keripik Buah",
+      "Kopi Luwak",
+      "Arak Bali"
+    ],
+    "unggulan": true
+  },
+  {
+    "id": 10,
+    "nama": "Konveksi Seragam Berkualitas",
+    "kategori": "fashion",
+    "deskripsi": "Konveksi yang mengkhususkan diri dalam pembuatan seragam sekolah, kantor, dan organisasi.",
+    "gambar": "https://picsum.photos/400/300?random=10",
+    "lokasi": "Bandung",
+    "kontak": {
+      "whatsapp": "+62821-2345-6789",
+      "email": "konveksiseragam@yahoo.com",
+      "alamat": "Jl. Cihampelas No. 200, Bandung"
+    },
+    "produk": [
+      "Seragam Sekolah",
+      "Seragam Kantor",
+      "Seragam Organisasi",
+      "Kemeja Custom",
+      "Polo Shirt"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 11,
+    "nama": "Bengkel Las Kreatif",
+    "kategori": "jasa",
+    "deskripsi": "Jasa pengelasan dan fabrikasi logam untuk kebutuhan industri dan rumah tangga.",
+    "gambar": "https://picsum.photos/400/300?random=11",
+    "lokasi": "Surabaya",
+    "kontak": {
+      "whatsapp": "+62822-3456-7890",
+      "email": "bengkellas@gmail.com",
+      "alamat": "Jl. Industri No. 45, Surabaya"
+    },
+    "produk": [
+      "Las Listrik",
+      "Las Argon",
+      "Fabrikasi Logam",
+      "Pagar Besi",
+      "Kanopi"
+    ],
+    "unggulan": false
+  },
+  {
+    "id": 12,
+    "nama": "Startup EdTech Belajar Online",
+    "kategori": "teknologi",
+    "deskripsi": "Platform pembelajaran online yang menyediakan kursus digital untuk berbagai skill.",
+    "gambar": "https://picsum.photos/400/300?random=12",
+    "lokasi": "Jakarta",
+    "kontak": {
+      "whatsapp": "+62823-4567-8901",
+      "email": "edtech@startup.com",
+      "alamat": "Jl. Kuningan No. 77, Jakarta Selatan"
+    },
+    "produk": [
+      "Kursus Programming",
+      "Digital Marketing",
+      "Desain Grafis",
+      "Data Science",
+      "Mobile App"
+    ],
+    "unggulan": true
+  }
+]
