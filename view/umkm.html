@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daftar lengkap PASAR DIGITAL. Temukan berbagai usaha kecil menengah terbaik dengan produk berkualitas dari seluruh Indonesia.">
-    <meta name="keywords" content="daftar UMKM, usaha kecil Indonesia, produk lokal, bisnis Indonesia">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daftar lengkap PASAR DIGITAL. Temukan berbagai usaha kecil menengah terbaik dengan produk berkualitas dari seluruh Indonesia."
+    />
+    <meta
+      name="keywords"
+      content="daftar UMKM, usaha kecil Indonesia, produk lokal, bisnis Indonesia"
+    />
     <title>Daftar UMKM - PASAR DIGITAL</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -20,137 +30,176 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="nav-container">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <a href="index.html">
-                            <img src="/assets/img/logo.png" alt="logo" class="mainlogo">
-                        </a>
-                    </div>
-                    <span class="logo-nav">PASAR <span class="logospan">DIGITAL</span></span>
-                </div>
-                
-                <nav class="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About Us</a>
-                    <a href="umkm.html" class="nav-link active">Daftar UMKM</a>
-                    <a href="#contact" class="nav-link">Contact Us</a>
-                    <div class="mobilenavact">
-                        <div style="display: flex; gap: 1em; justify-content: center; align-items: center;">
-                            <button id="darkModeToggle1" class="dark-mode-btn">🌙</button>
-                            <button class="btn-secondary">Sign In</button>
-                            <button class="btn-primary">Sign Up</button>
-                        </div>
-                    </div>
-                </nav>
-                
-                <div class="nav-actions">
-                    <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
-                    <button class="btn-secondary">Sign In</button>
-                    <button class="btn-primary">Sign Up</button>
-                </div>
-                
-                <button class="hamburger" id="hamburger">
-                    <i class="ph ph-list"></i>
-                </button>
+      <div class="container">
+        <div class="nav-container">
+          <div class="logo">
+            <div class="logo-icon">
+              <a href="index.html">
+                <img src="/assets/img/logo.png" alt="logo" class="mainlogo" />
+              </a>
             </div>
+            <span class="logo-nav"
+              >PASAR <span class="logospan">DIGITAL</span></span
+            >
+          </div>
+
+          <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="umkm.html" class="nav-link active">Daftar UMKM</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
+            <div class="mobilenavact">
+              <div
+                style="
+                  display: flex;
+                  gap: 1em;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <button id="darkModeToggle1" class="dark-mode-btn">🌙</button>
+                <button class="btn-secondary" onclick="alertbtn()">
+                  Sign In
+                </button>
+                <button class="btn-primary" onclick="alertbtn()">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </nav>
+
+          <div class="nav-actions">
+            <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+            <button class="btn-secondary" onclick="alertbtn()">Sign In</button>
+            <button class="btn-primary" onclick="alertbtn()">Sign Up</button>
+          </div>
+
+          <button class="hamburger" id="hamburger">
+            <i class="ph ph-list"></i>
+          </button>
         </div>
+      </div>
     </header>
 
     <main class="main">
-        <section class="page-hero">
-            <div class="container">
-                <h1>Daftar UMKM Indonesia</h1>
-                <p>Temukan berbagai UMKM terbaik dari seluruh Indonesia</p>
-            </div>
-        </section>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Daftar UMKM Indonesia</h1>
+          <p>Temukan berbagai UMKM terbaik dari seluruh Indonesia</p>
+        </div>
+      </section>
 
-        <section class="filters-section">
-            <div class="container">
-                <div class="filters">
-                    <div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Cari nama usaha atau produk..." class="search-input">
-                        <button type="button" id="searchBtn" class="search-btn"><i class="ph ph-magnifying-glass"></i></button>
-                    </div>
-                    
-                    <div class="filter-container">
-                        <select id="categoryFilter" class="filter-select">
-                            <option value="">Semua Kategori</option>
-                            <option value="makanan">Makanan & Minuman</option>
-                            <option value="kerajinan">Kerajinan</option>
-                            <option value="fashion">Fashion</option>
-                            <option value="teknologi">Teknologi</option>
-                            <option value="jasa">Jasa</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div id="filterTags" class="filter-tags">
-                    <!-- Filter tags will be displayed here -->
-                </div>
+      <section class="filters-section">
+        <div class="container">
+          <div class="filters">
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari nama usaha atau produk..."
+                class="search-input"
+              />
+              <button type="button" id="searchBtn" class="search-btn">
+                <i class="ph ph-magnifying-glass"></i>
+              </button>
             </div>
-        </section>
 
-        <section class="umkm-list-section">
-            <div class="container">
-                <div class="results-info">
-                    <span id="resultsCount">Memuat data...</span>
-                </div>
-                
-                <div id="umkmGrid" class="umkm-grid">
-                    <!-- UMKM cards will be loaded here -->
-                </div>
-                
-                <div id="pagination" class="pagination">
-                    <!-- Pagination will be loaded here -->
-                </div>
-                
-                <div id="noResults" class="no-results" style="display: none;">
-                    <div class="no-results-content">
-                        <div class="no-results-icon">🔍</div>
-                        <h3>Tidak ada UMKM yang ditemukan</h3>
-                        <p>Coba kata kunci atau kategori lain</p>
-                    </div>
-                </div>
+            <div class="filter-container">
+              <select id="categoryFilter" class="filter-select">
+                <option value="">Semua Kategori</option>
+                <option value="makanan">Makanan & Minuman</option>
+                <option value="kerajinan">Kerajinan</option>
+                <option value="fashion">Fashion</option>
+                <option value="teknologi">Teknologi</option>
+                <option value="jasa">Jasa</option>
+              </select>
             </div>
-        </section>
+          </div>
+
+          <div id="filterTags" class="filter-tags">
+            <!-- Filter tags will be displayed here -->
+          </div>
+        </div>
+      </section>
+
+      <section class="umkm-list-section">
+        <div class="container">
+          <div class="results-info">
+            <span id="resultsCount">Memuat data...</span>
+          </div>
+
+          <div id="umkmGrid" class="umkm-grid">
+            <!-- UMKM cards will be loaded here -->
+          </div>
+
+          <div id="pagination" class="pagination">
+            <!-- Pagination will be loaded here -->
+          </div>
+
+          <div id="noResults" class="no-results" style="display: none">
+            <div class="no-results-content">
+              <div class="no-results-icon">🔍</div>
+              <h3>Tidak ada UMKM yang ditemukan</h3>
+              <p>Coba kata kunci atau kategori lain</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="/assets/img/logo.png" alt="logo" class="mainlogo">
-                        </div>
-                        <span class="logo-text">PASAR <span class="logospan">DIGITAL</span></span>
-                    </div>
-                    <p>Platform terpercaya untuk mendukung dan memperkenalkan UMKM lokal Indonesia kepada masyarakat luas.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Kontak</h3>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-info"></i>info@pasardigital.com</p>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-info"></i>+62 812-3456-7890</p>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-map-pin-line"></i>Jakarta, Indonesia</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Tautan</h3>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="umkm.html">Daftar UMKM</a>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <div class="logo-icon">
+                <img src="/assets/img/logo.png" alt="logo" class="mainlogo" />
+              </div>
+              <span class="logo-text"
+                >PASAR <span class="logospan">DIGITAL</span></span
+              >
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 <a href="https://www.instagram.com/jnpblokg_/" target="_blank" class="socialprs">Juan P Kuganda</a>. Semua hak dilindungi.</p>
-            </div>
+            <p>
+              Platform terpercaya untuk mendukung dan memperkenalkan UMKM lokal
+              Indonesia kepada masyarakat luas.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <p style="display: inline-flex; align-items: center; gap: 0.5em">
+              <i class="ph ph-info"></i>info@pasardigital.com
+            </p>
+            <p style="display: inline-flex; align-items: center; gap: 0.5em">
+              <i class="ph ph-info"></i>+62 812-3456-7890
+            </p>
+            <p style="display: inline-flex; align-items: center; gap: 0.5em">
+              <i class="ph ph-map-pin-line"></i>Jakarta, Indonesia
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Tautan</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="umkm.html">Daftar UMKM</a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025
+            <a
+              href="https://www.instagram.com/jnpblokg_/"
+              target="_blank"
+              class="socialprs"
+              >Juan P Kuganda</a
+            >. Semua hak dilindungi.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Platform untuk memperkenalkan dan mendukung UMKM lokal Indonesia. Temukan produk berkualitas dari usaha kecil menengah terbaik di Indonesia.">
+    <meta name="description"
+        content="Platform untuk memperkenalkan dan mendukung UMKM lokal Indonesia. Temukan produk berkualitas dari usaha kecil menengah terbaik di Indonesia.">
     <meta name="keywords" content="UMKM, usaha kecil menengah, Indonesia, produk lokal, bisnis lokal">
     <meta name="author" content="Juan">
     <title>PASAR DIGITAL - Dukung Usaha Lokal Terbaik</title>
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -31,10 +30,10 @@
                         <a href="#">
                             <img src="/assets/img/logo.png" alt="logo" class="mainlogo">
                         </a>
-                        </div>
-                        <span class="logo-nav">PASAR <span class="logospan">DIGITAL</span></span>
                     </div>
-                
+                    <span class="logo-nav">PASAR <span class="logospan">DIGITAL</span></span>
+                </div>
+
                 <nav class="nav-menu">
                     <a href="index.html" class="nav-link active">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
@@ -42,19 +41,19 @@
                     <a href="#contact" class="nav-link">Contact Us</a>
                     <div class="mobilenavact">
                         <div style="display: flex; gap: 1em; justify-content: center; align-items: center;">
-                            <button id="darkModeToggle1" class="dark-mode-btn">🌙</button>   
-                            <button class="btn-secondary">Sign In</button>
-                            <button class="btn-primary">Sign Up</button>
+                            <button id="darkModeToggle1" class="dark-mode-btn">🌙</button>
+                            <button class="btn-secondary" onclick="alertbtn()">Sign In</button>
+                            <button class="btn-primary" onclick="alertbtn()">Sign Up</button>
                         </div>
                     </div>
                 </nav>
-                
+
                 <div class="nav-actions">
                     <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
-                    <button class="btn-secondary">Sign In</button>
-                    <button class="btn-primary">Sign Up</button>
+                    <button class="btn-secondary" onclick="alertbtn()">Sign In</button>
+                    <button class="btn-primary" onclick="alertbtn()">Sign Up</button>
                 </div>
-                
+
                 <button class="hamburger" id="hamburger">
                     <i class="ph ph-list"></i>
                 </button>
@@ -69,7 +68,7 @@
                     <div class="hero-text reveal-item">
                         <p class="hero-subtitle">Selamat Datang di PASAR DIGITAL</p>
                         <h1 class="hero-title">
-                            TEMUKAN <span class="highlight">UMKM</span> TERBAIK 
+                            TEMUKAN <span class="highlight">UMKM</span> TERBAIK
                             <div class="review-badge">
                                 <div class="review-avatars">
                                     <img src="https://picsum.photos/40/40?random=1" alt="User 1">
@@ -84,13 +83,17 @@
                             <span class="highlight-orange">DALAM HITUNGAN MENIT</span>
                         </h1>
                         <p class="hero-description">
-                            Di <span class="logospan">PASAR DIGITAL</span>, kami membantu Anda menemukan lebih dari sekadar produk—kami membantu Anda menemukan kualitas yang benar-benar dapat diandalkan. Baik Anda sedang mencari, membeli, atau siap untuk menjual, platform kami memandu Anda di setiap langkah dengan kesederhanaan, transparansi, dan perhatian.
+                            Di <span class="logospan">PASAR DIGITAL</span>, kami membantu Anda menemukan lebih dari
+                            sekadar produk—kami membantu Anda menemukan kualitas yang benar-benar dapat diandalkan. Baik
+                            Anda sedang mencari, membeli, atau siap untuk menjual, platform kami memandu Anda di setiap
+                            langkah dengan kesederhanaan, transparansi, dan perhatian.
                         </p>
                     </div>
-                    
+
                     <div class="hero-image reveal-item" data-delay="200">
                         <div class="shape"></div>
-                        <img src="https://picsum.photos/800/600?random=business" alt="UMKM Indonesia" loading="lazy">
+                        <img src="/assets/img/heropict.webp" alt="UMKM Indonesia" loading="lazy"
+                            style="height: 400px; width: 100%; object-fit: cover; object-position: center;">
                     </div>
                 </div>
             </div>
@@ -119,17 +122,67 @@
             </div>
         </section>
 
+        <section class="mvp reveal-item">
+            <div class="mvp-content">
+                <div class="mvpA">
+                    <div class="Atext">
+                        <h3>Program UMKM Naik Kelas</h3>
+                        <p>
+                            Kami tidak hanya menghubungkan, tapi juga mendampingi. Dapatkan akses ke berbagai materi,
+                            webinar, dan bimbingan seputar pemasaran digital, manajemen keuangan, dan strategi bisnis.
+                        </p>
+                    </div>
+                </div>
+                <div class="mvpB">
+                    <div class="A">
+                        <div class="earth-loader">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                <path transform="translate(100 100)"
+                                    d="M29.4,-17.4C33.1,1.8,27.6,16.1,11.5,31.6C-4.7,47,-31.5,63.6,-43,56C-54.5,48.4,-50.7,16.6,-41,-10.9C-31.3,-38.4,-15.6,-61.5,-1.4,-61C12.8,-60.5,25.7,-36.5,29.4,-17.4Z"
+                                    fill="#ff5722"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                <path transform="translate(100 100)"
+                                    d="M31.7,-55.8C40.3,-50,45.9,-39.9,49.7,-29.8C53.5,-19.8,55.5,-9.9,53.1,-1.4C50.6,7.1,43.6,14.1,41.8,27.6C40.1,41.1,43.4,61.1,37.3,67C31.2,72.9,15.6,64.8,1.5,62.2C-12.5,59.5,-25,62.3,-31.8,56.7C-38.5,51.1,-39.4,37.2,-49.3,26.3C-59.1,15.5,-78,7.7,-77.6,0.2C-77.2,-7.2,-57.4,-14.5,-49.3,-28.4C-41.2,-42.4,-44.7,-63,-38.5,-70.1C-32.2,-77.2,-16.1,-70.8,-2.3,-66.9C11.6,-63,23.1,-61.5,31.7,-55.8Z"
+                                    fill="#ff5722"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                <path transform="translate(100 100)"
+                                    d="M30.6,-49.2C42.5,-46.1,57.1,-43.7,67.6,-35.7C78.1,-27.6,84.6,-13.8,80.3,-2.4C76.1,8.9,61.2,17.8,52.5,29.1C43.8,40.3,41.4,53.9,33.7,64C26,74.1,13,80.6,2.2,76.9C-8.6,73.1,-17.3,59,-30.6,52.1C-43.9,45.3,-61.9,45.7,-74.1,38.2C-86.4,30.7,-92.9,15.4,-88.6,2.5C-84.4,-10.5,-69.4,-20.9,-60.7,-34.6C-52.1,-48.3,-49.8,-65.3,-40.7,-70C-31.6,-74.8,-15.8,-67.4,-3.2,-61.8C9.3,-56.1,18.6,-52.3,30.6,-49.2Z"
+                                    fill="#ff5722"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                <path transform="translate(100 100)"
+                                    d="M39.4,-66C48.6,-62.9,51.9,-47.4,52.9,-34.3C53.8,-21.3,52.4,-10.6,54.4,1.1C56.3,12.9,61.7,25.8,57.5,33.2C53.2,40.5,39.3,42.3,28.2,46C17,49.6,8.5,55.1,1.3,52.8C-5.9,50.5,-11.7,40.5,-23.6,37.2C-35.4,34,-53.3,37.5,-62,32.4C-70.7,27.4,-70.4,13.7,-72.4,-1.1C-74.3,-15.9,-78.6,-31.9,-73.3,-43C-68.1,-54.2,-53.3,-60.5,-39.5,-60.9C-25.7,-61.4,-12.9,-56,1.1,-58C15.1,-59.9,30.2,-69.2,39.4,-66Z"
+                                    fill="#ff5722"></path>
+                            </svg>
+                        </div>
+                        <div class="Adesc">
+                            <h3 style="line-height: normal;">Menghubungkan Semua UMKM</h3>
+                            <p>Temukan mitra bisnis, pemasok terpercaya, dan pelanggan baru dari seluruh penjuru. Mari
+                                bangun jaringan usaha yang lebih luas dan lebih kuat bersama kami.</p>
+                        </div>
+                    </div>
+                    <div class="B">
+                        <h3>50%</h3>
+                        <p>Buka peluang omset naik 50% dan Terhubung lebih luas dengan mendaftar di Pasar Digital.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
         <section class="featured-umkm">
             <div class="container">
                 <div class="section-header reveal-item">
                     <h2>UMKM Unggulan</h2>
                     <p>Temukan UMKM terbaik yang telah dipercaya ribuan pelanggan</p>
                 </div>
-                
+
                 <div id="featuredUMKM" class="umkm-grid">
                     <!-- Featured UMKM will be loaded here -->
                 </div>
-                
+
                 <div class="section-footer reveal-item">
                     <a href="umkm.html" class="btn-primary">Lihat Semua UMKM</a>
                 </div>
@@ -142,7 +195,7 @@
                     <h2>Mengapa Memilih PASAR <span class="logospan">DIGITAL</span>?</h2>
                     <p>Platform terpercaya untuk mendukung ekonomi lokal Indonesia</p>
                 </div>
-                
+
                 <div class="features-grid">
                     <div class="feature-card reveal-item" data-delay="100">
                         <div class="feature-icon"><i class="ph ph-chart-line-up"></i></div>
@@ -152,12 +205,14 @@
                     <div class="feature-card reveal-item" data-delay="200">
                         <div class="feature-icon"><i class="ph ph-trophy"></i></div>
                         <h3>Kualitas Terjamin</h3>
-                        <p>Setiap UMKM telah melalui proses verifikasi untuk memastikan kualitas produk dan layanan terbaik.</p>
+                        <p>Setiap UMKM telah melalui proses verifikasi untuk memastikan kualitas produk dan layanan
+                            terbaik.</p>
                     </div>
                     <div class="feature-card reveal-item" data-delay="300">
                         <div class="feature-icon"><i class="ph ph-circuitry"></i></div>
                         <h3>Inovasi Berkelanjutan</h3>
-                        <p>UMKM adalah motor inovasi yang menciptakan solusi kreatif untuk kebutuhan masyarakat modern.</p>
+                        <p>UMKM adalah motor inovasi yang menciptakan solusi kreatif untuk kebutuhan masyarakat modern.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -169,13 +224,14 @@
                     <h2>Apa Kata Mereka?</h2>
                     <p>Testimoni dari UMKM dan pelanggan yang telah merasakan manfaatnya</p>
                 </div>
-                
+
                 <div class="testimonial-container reveal-item">
                     <div class="testimonial-track">
                         <div class="testimonial-item">
                             <div class="testimonial-content">
                                 <div class="testimonial-text">
-                                    <p>Platform UMKM Indonesia sangat membantu bisnis gudeg saya berkembang. Sekarang pelanggan dari luar kota bisa dengan mudah menemukan warung kami!</p>
+                                    <p>Platform UMKM Indonesia sangat membantu bisnis gudeg saya berkembang. Sekarang
+                                        pelanggan dari luar kota bisa dengan mudah menemukan warung kami!</p>
                                 </div>
                                 <div class="testimonial-author">
                                     <img src="https://picsum.photos/60/60?random=testimonial1" alt="Bu Sari">
@@ -186,11 +242,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="testimonial-item">
                             <div class="testimonial-content">
                                 <div class="testimonial-text">
-                                    <p>Sebagai pengrajin batik, saya merasa terbantu dengan adanya platform ini. Produk batik kami jadi lebih dikenal dan penjualan meningkat drastis.</p>
+                                    <p>Sebagai pengrajin batik, saya merasa terbantu dengan adanya platform ini. Produk
+                                        batik kami jadi lebih dikenal dan penjualan meningkat drastis.</p>
                                 </div>
                                 <div class="testimonial-author">
                                     <img src="https://picsum.photos/60/60?random=testimonial2" alt="Pak Indra">
@@ -201,11 +258,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="testimonial-item">
                             <div class="testimonial-content">
                                 <div class="testimonial-text">
-                                    <p>Kualitas produk UMKM di platform ini benar-benar terjamin. Saya sudah berbelanja berkali-kali dan selalu puas dengan hasilnya.</p>
+                                    <p>Kualitas produk UMKM di platform ini benar-benar terjamin. Saya sudah berbelanja
+                                        berkali-kali dan selalu puas dengan hasilnya.</p>
                                 </div>
                                 <div class="testimonial-author">
                                     <img src="https://picsum.photos/60/60?random=testimonial3" alt="Maya">
@@ -217,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="testimonial-controls">
                         <button class="testimonial-btn testimonial-prev">‹</button>
                         <button class="testimonial-btn testimonial-next">›</button>
@@ -237,13 +295,17 @@
                         </div>
                         <span class="logo-text">PASAR <span class="logospan">DIGITAL</span></span>
                     </div>
-                    <p>Platform terpercaya untuk mendukung dan memperkenalkan UMKM lokal Indonesia kepada masyarakat luas.</p>
+                    <p>Platform terpercaya untuk mendukung dan memperkenalkan UMKM lokal Indonesia kepada masyarakat
+                        luas.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Kontak</h3>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-info"></i>info@pasardigital.com</p>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-info"></i>+62 812-3456-7890</p>
-                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-map-pin-line"></i>Jakarta, Indonesia</p>
+                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i
+                            class="ph ph-info"></i>info@pasardigital.com</p>
+                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i class="ph ph-info"></i>+62
+                        812-3456-7890</p>
+                    <p style="display: inline-flex; align-items: center; gap: 0.5em;"><i
+                            class="ph ph-map-pin-line"></i>Jakarta, Indonesia</p>
                 </div>
                 <div class="footer-section">
                     <h3>Tautan</h3>
@@ -253,11 +315,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 <a href="https://www.instagram.com/jnpblokg_/" target="_blank" class="socialprs">Juan P Kuganda</a>. Semua hak dilindungi.</p>
+                <p>&copy; 2025 <a href="https://www.instagram.com/jnpblokg_/" target="_blank" class="socialprs">Juan P
+                        Kuganda</a>. Semua hak dilindungi.</p>
             </div>
         </div>
     </footer>
 
     <script src="/js/script.js"></script>
 </body>
+
 </html>

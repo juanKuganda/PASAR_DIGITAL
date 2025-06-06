@@ -13,6 +13,8 @@ const darkModeToggle1 = document.getElementById("darkModeToggle1");
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+const alertbtn = () => alert("fitur belum berfungsi ehehehehe");
+
 // Initialize the application
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM Content Loaded");
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "about":
       initializeAboutPage();
       break;
-    case "detail": 
+    case "detail":
       initializeDetailPage();
       break;
   }
@@ -98,7 +100,7 @@ function initializeCustomCursor() {
 }
 
 // Dark mode functionality
-function initializeDarkMode() { 
+function initializeDarkMode() {
   const savedTheme = localStorage.getItem("theme") || "light";
   document.documentElement.setAttribute("data-theme", savedTheme);
   updateDarkModeButton(savedTheme);
@@ -243,7 +245,7 @@ async function loadUMKMData() {
   } catch (error) {
     console.error("Error loading UMKM data:", error);
     console.log("Using fallback data");
-    umkmData = getFallbackData()
+    umkmData = getFallbackData();
   }
 
   filteredData = [...umkmData];
@@ -463,8 +465,8 @@ function displayFeaturedUMKM() {
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
                   <a href="detail.html?id=${
-                           umkm.id
-                         }" class="btn-primary detail-button">
+                    umkm.id
+                  }" class="btn-primary detail-button">
                     Lihat Detail
                 </a>
             </div>
@@ -862,8 +864,8 @@ function displayRelatedUMKM(currentId) {
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
                         <a href="detail.html?id=${
-                   umkm.id
-                 }" class="btn-primary detail-button">
+                          umkm.id
+                        }" class="btn-primary detail-button">
                     Lihat Detail
                 </a>
             </div>

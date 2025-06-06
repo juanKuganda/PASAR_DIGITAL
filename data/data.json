@@ -4,7 +4,7 @@
     "nama": "Warung Nasi Gudeg Bu Sari",
     "kategori": "makanan",
     "deskripsi": "Warung gudeg tradisional dengan cita rasa autentik Yogyakarta yang telah berdiri sejak 1985.",
-    "gambar": "https://picsum.photos/400/300?random=1",
+    "gambar": "/assets/img/umkm1.jpg",
     "lokasi": "Yogyakarta",
     "kontak": {
       "whatsapp": "+62812-3456-7890",
@@ -25,7 +25,7 @@
     "nama": "Kerajinan Batik Indah",
     "kategori": "kerajinan",
     "deskripsi": "Pengrajin batik tulis dan cap dengan motif tradisional dan kontemporer berkualitas tinggi.",
-    "gambar": "https://picsum.photos/400/300?random=2",
+    "gambar": "/assets/img/umkm2.jpg",
     "lokasi": "Solo",
     "kontak": {
       "whatsapp": "+62813-4567-8901",
@@ -46,7 +46,7 @@
     "nama": "Toko Kopi Arabika Gayo",
     "kategori": "makanan",
     "deskripsi": "Penjual kopi arabika premium dari dataran tinggi Gayo, Aceh dengan proses roasting terbaik.",
-    "gambar": "https://picsum.photos/400/300?random=3",
+    "gambar": "/assets/img/umkm3.jpg",
     "lokasi": "Aceh",
     "kontak": {
       "whatsapp": "+62814-5678-9012",
@@ -67,7 +67,7 @@
     "nama": "Fashion Hijab Modern",
     "kategori": "fashion",
     "deskripsi": "Butik hijab dengan desain modern dan bahan berkualitas untuk wanita muslimah masa kini.",
-    "gambar": "https://picsum.photos/400/300?random=4",
+    "gambar": "/assets/img/umkm4.jpg",
     "lokasi": "Bandung",
     "kontak": {
       "whatsapp": "+62815-6789-0123",
@@ -82,7 +82,7 @@
     "nama": "Aplikasi Kasir Digital SmartPOS",
     "kategori": "teknologi",
     "deskripsi": "Pengembang aplikasi kasir digital untuk UMKM dengan fitur lengkap dan mudah digunakan.",
-    "gambar": "https://picsum.photos/400/300?random=5",
+    "gambar": "/assets/img/umkm5.jpg",
     "lokasi": "Jakarta",
     "kontak": {
       "whatsapp": "+62816-7890-1234",
@@ -103,7 +103,7 @@
     "nama": "Jasa Desain Grafis Kreatif",
     "kategori": "jasa",
     "deskripsi": "Layanan desain grafis profesional untuk branding, packaging, dan kebutuhan promosi UMKM.",
-    "gambar": "https://picsum.photos/400/300?random=6",
+    "gambar": "/assets/img/umkm6.jpg",
     "lokasi": "Surabaya",
     "kontak": {
       "whatsapp": "+62817-8901-2345",
@@ -124,7 +124,7 @@
     "nama": "Keripik Singkong Renyah",
     "kategori": "makanan",
     "deskripsi": "Produsen keripik singkong dengan berbagai varian rasa yang renyah dan gurih.",
-    "gambar": "https://picsum.photos/400/300?random=7",
+    "gambar": "/assets/img/umkm7.jpg",
     "lokasi": "Malang",
     "kontak": {
       "whatsapp": "+62818-9012-3456",
@@ -144,7 +144,7 @@
     "nama": "Furniture Kayu Jati",
     "kategori": "kerajinan",
     "deskripsi": "Pengrajin furniture kayu jati berkualitas tinggi dengan desain klasik dan modern.",
-    "gambar": "https://picsum.photos/400/300?random=8",
+    "gambar": "/assets/img/umkm8.jpg",
     "lokasi": "Jepara",
     "kontak": {
       "whatsapp": "+62819-0123-4567",
@@ -165,7 +165,7 @@
     "nama": "Toko Oleh-oleh Khas Bali",
     "kategori": "makanan",
     "deskripsi": "Menyediakan berbagai oleh-oleh khas Bali seperti pie susu, dodol, dan keripik buah.",
-    "gambar": "https://picsum.photos/400/300?random=9",
+    "gambar": "/assets/img/umkm9.jpg",
     "lokasi": "Bali",
     "kontak": {
       "whatsapp": "+62820-1234-5678",
@@ -186,7 +186,7 @@
     "nama": "Konveksi Seragam Berkualitas",
     "kategori": "fashion",
     "deskripsi": "Konveksi yang mengkhususkan diri dalam pembuatan seragam sekolah, kantor, dan organisasi.",
-    "gambar": "https://picsum.photos/400/300?random=10",
+    "gambar": "/assets/img/umkm10.jpg",
     "lokasi": "Bandung",
     "kontak": {
       "whatsapp": "+62821-2345-6789",
@@ -207,7 +207,7 @@
     "nama": "Bengkel Las Kreatif",
     "kategori": "jasa",
     "deskripsi": "Jasa pengelasan dan fabrikasi logam untuk kebutuhan industri dan rumah tangga.",
-    "gambar": "https://picsum.photos/400/300?random=11",
+    "gambar": "/assets/img/umkm11.jpg",
     "lokasi": "Surabaya",
     "kontak": {
       "whatsapp": "+62822-3456-7890",
@@ -228,7 +228,7 @@
     "nama": "Startup EdTech Belajar Online",
     "kategori": "teknologi",
     "deskripsi": "Platform pembelajaran online yang menyediakan kursus digital untuk berbagai skill.",
-    "gambar": "https://picsum.photos/400/300?random=12",
+    "gambar": "/assets/img/umkm12.jpg",
     "lokasi": "Jakarta",
     "kontak": {
       "whatsapp": "+62823-4567-8901",
