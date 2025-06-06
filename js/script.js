@@ -775,7 +775,7 @@ async function displayUMKMDetail(id) {
         <p><strong><i class="fas fa-map-marker-alt"></i> Lokasi:</strong> ${
           umkm.lokasi
         }</p>
-        <iframe class="map" style="border-radius:10px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28840.52512505532!2d119.88832233184472!3d-0.8921244288559399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1749144624374!5m2!1sen!2sid" width="400" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" style="border-radius:10px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28840.52512505532!2d119.88832233184472!3d-0.8921244288559399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1749144624374!5m2!1sen!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     
