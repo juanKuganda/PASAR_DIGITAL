@@ -590,7 +590,7 @@ function displayAllUMKM() {
                 )}</span>
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
-                 <a href="detail.html?id=${
+                 <a href="/view/detail.html?id=${
                    umkm.id
                  }" class="btn-primary detail-button">
                     Lihat Detail
