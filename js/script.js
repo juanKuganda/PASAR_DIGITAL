@@ -53,51 +53,52 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Get current page
 function getCurrentPage() {
   const path = window.location.pathname;
-  if (path.includes("/view/umkm.html")) return "umkm";
-  if (path.includes("/view/about.html")) return "about";
-  if (path.includes("/view/detail.html")) return "detail";
+
+  // Cek apakah path diakhiri dengan nama halaman (tanpa ekstensi)
+  if (path.endsWith("/umkm")) return "umkm";
+  if (path.endsWith("/about")) return "about";
+  if (path.endsWith("/detail")) return "detail";
+
+  // Penanganan untuk halaman utama/index
+  // URL bisa jadi "/" atau "/view/" atau "/view/index"
+  if (path === "/" || path.endsWith("/index") || path.endsWith("/view/")) {
+    return "index";
+  }
+
+  // Fallback jika tidak ada yang cocok
   return "index";
 }
 
 // Custom cursor
-function initializeCustomCursor() {
-  const cursor = document.querySelector(".cursor");
-  const cursorFollower = document.querySelector(".cursor-follower");
+const cursor = document.querySelector(".cursor");
+const cursorFollower = document.querySelector(".cursor-follower");
 
-  if (window.matchMedia("(hover: hover)").matches) {
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
+document.addEventListener("mousemove", (e) => {
+  const { clientX: x, clientY: y } = e;
 
-      // Add a slight delay to follower for smooth effect
-      setTimeout(() => {
-        cursorFollower.style.left = e.clientX + "px";
-        cursorFollower.style.top = e.clientY + "px";
-      }, 50);
-    });
+  // Update cursor position
+  cursor.style.transform = `translate(${x}px, ${y}px)`;
 
-    // Change cursor size on links and buttons
-    document
-      .querySelectorAll("a, button, .umkm-card, .benefit-card")
-      .forEach((item) => {
-        item.addEventListener("mouseenter", () => {
-          cursor.style.width = "0";
-          cursor.style.height = "0";
-          cursorFollower.style.width = "50px";
-          cursorFollower.style.height = "50px";
-          cursorFollower.style.borderWidth = "3px";
-        });
+  // Update follower position with a slight delay
+  cursorFollower.style.transform = `translate(${x}px, ${y}px)`;
+});
 
-        item.addEventListener("mouseleave", () => {
-          cursor.style.width = "10px";
-          cursor.style.height = "10px";
-          cursorFollower.style.width = "30px";
-          cursorFollower.style.height = "30px";
-          cursorFollower.style.borderWidth = "2px";
-        });
-      });
-  }
-}
+// Optional: Add hover effects for interactive elements
+document.querySelectorAll("a, button").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    cursor.style.width = "20px";
+    cursor.style.height = "20px";
+    cursorFollower.style.width = "40px";
+    cursorFollower.style.height = "40px";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    cursor.style.width = "10px";
+    cursor.style.height = "10px";
+    cursorFollower.style.width = "30px";
+    cursorFollower.style.height = "30px";
+  });
+});
 
 // Dark mode functionality
 function initializeDarkMode() {
