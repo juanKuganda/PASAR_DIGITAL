@@ -54,20 +54,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 function getCurrentPage() {
   const path = window.location.pathname;
 
-  if (path.endsWith("umkm.html")) return "umkm";
-  if (path.endsWith("about.html")) return "about";
-  if (path.endsWith("detail.html")) return "detail";
+  // Ambil nama file terakhir dari path
+  const filename = path.split("/").pop(); // contoh: 'umkm.html' atau 'umkm'
 
+  if (filename.startsWith("umkm")) return "umkm";
+  if (filename.startsWith("about")) return "about";
+  if (filename.startsWith("detail")) return "detail";
   if (
-    path === "/" ||
-    path.endsWith("index.html") ||
-    path.endsWith("/view/") ||
-    path === "/view"
+    filename === "" || // beranda root /
+    filename.startsWith("index")
   ) {
     return "index";
   }
 
-  return "index";
+  return "index"; // fallback jika tidak cocok
 }
 
 
