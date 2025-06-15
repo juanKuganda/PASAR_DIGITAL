@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Get current page
 function getCurrentPage() {
   const path = window.location.pathname;
-  if (path.includes("umkm.html")) return "umkm";
-  if (path.includes("about.html")) return "about";
-  if (path.includes("detail.html")) return "detail";
+  if (path.includes("/view/umkm.html")) return "umkm";
+  if (path.includes("/view/about.html")) return "about";
+  if (path.includes("/view/detail.html")) return "detail";
   return "index";
 }
 
@@ -547,13 +547,12 @@ function displayAllUMKM() {
 
   if (!isDataLoaded) {
     console.log("Data not loaded yet, showing loading");
-    umkmGrid.innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
-    resultsCount.textContent = "Memuat data...";
-    if (resultsCount) {
-      console.log("Displaying UMKM data:", filteredData.length, "items");
-    }
+    umkmGrid.innerHTML ='<div class="loading"><div class="loading-spinner"></div></div>';
+    if (resultsCount) resultsCount.textContent = "Memuat data...";
+    return;
   }
 
+  console.log("Displaying UMKM data:", filteredData.length, "items");
 
   if (filteredData.length === 0) {
     umkmGrid.innerHTML = "";
