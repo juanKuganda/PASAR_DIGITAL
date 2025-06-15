@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 function getCurrentPage() {
   const path = window.location.pathname;
 
+  if (path.endsWith(".html")) {
+    path = path.slice(0, -5); // Menghapus 5 karakter terakhir (".html")
+  }
+
   // Cek apakah path diakhiri dengan nama halaman (tanpa ekstensi)
   if (path.endsWith("/umkm")) return "umkm";
   if (path.endsWith("/about")) return "about";
@@ -65,7 +69,6 @@ function getCurrentPage() {
     return "index";
   }
 
-  // Fallback jika tidak ada yang cocok
   return "index";
 }
 
@@ -590,7 +593,7 @@ function displayAllUMKM() {
                 )}</span>
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
-                 <a href="/view/detail.html?id=${
+                 <a href="/detail.html?id=${
                    umkm.id
                  }" class="btn-primary detail-button">
                     Lihat Detail
