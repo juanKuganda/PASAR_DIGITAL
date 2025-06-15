@@ -54,23 +54,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 function getCurrentPage() {
   const path = window.location.pathname;
 
-  if (path.endsWith(".html")) {
-    path = path.slice(0, -5); // Menghapus 5 karakter terakhir (".html")
-  }
+  if (path.endsWith("umkm.html")) return "umkm";
+  if (path.endsWith("about.html")) return "about";
+  if (path.endsWith("detail.html")) return "detail";
 
-  // Cek apakah path diakhiri dengan nama halaman (tanpa ekstensi)
-  if (path.endsWith("/umkm")) return "umkm";
-  if (path.endsWith("/about")) return "about";
-  if (path.endsWith("/detail")) return "detail";
-
-  // Penanganan untuk halaman utama/index
-  // URL bisa jadi "/" atau "/view/" atau "/view/index"
-  if (path === "/" || path.endsWith("/index") || path.endsWith("/view/")) {
+  if (
+    path === "/" ||
+    path.endsWith("index.html") ||
+    path.endsWith("/view/") ||
+    path === "/view"
+  ) {
     return "index";
   }
 
   return "index";
 }
+
 
 // Custom cursor
 const cursor = document.querySelector(".cursor");
@@ -593,7 +592,7 @@ function displayAllUMKM() {
                 )}</span>
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
-                 <a href="/detail.html?id=${
+                 <a href="/view/detail.html?id=${
                    umkm.id
                  }" class="btn-primary detail-button">
                     Lihat Detail
