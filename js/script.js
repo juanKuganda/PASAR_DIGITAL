@@ -547,14 +547,13 @@ function displayAllUMKM() {
 
   if (!isDataLoaded) {
     console.log("Data not loaded yet, showing loading");
+    umkmGrid.innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
+    resultsCount.textContent = "Memuat data...";
     if (resultsCount) {
-      umkmGrid.innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
-      resultsCount.textContent = "Memuat data...";
+      console.log("Displaying UMKM data:", filteredData.length, "items");
     }
-    return;
   }
 
-  console.log("Displaying UMKM data:", filteredData.length, "items");
 
   if (filteredData.length === 0) {
     umkmGrid.innerHTML = "";
