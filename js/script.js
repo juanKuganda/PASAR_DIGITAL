@@ -464,7 +464,7 @@ function displayFeaturedUMKM() {
                 )}</span>
                 <h3>${umkm.nama}</h3>
                 <p>${umkm.deskripsi}</p>
-                  <a href="detail.html?id=${
+                  <a href="view/detail.html?id=${
                     umkm.id
                   }" class="btn-primary detail-button">
                     Lihat Detail
@@ -547,9 +547,10 @@ function displayAllUMKM() {
 
   if (!isDataLoaded) {
     console.log("Data not loaded yet, showing loading");
-    umkmGrid.innerHTML =
-      '<div class="loading"><div class="loading-spinner"></div></div>';
-    if (resultsCount) resultsCount.textContent = "Memuat data...";
+    if (resultsCount) {
+      umkmGrid.innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
+      resultsCount.textContent = "Memuat data...";
+    }
     return;
   }
 
