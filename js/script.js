@@ -71,37 +71,6 @@ function getCurrentPage() {
 }
 
 
-// Custom cursor
-const cursor = document.querySelector(".cursor");
-const cursorFollower = document.querySelector(".cursor-follower");
-
-document.addEventListener("mousemove", (e) => {
-  const { clientX: x, clientY: y } = e;
-
-  // Update cursor position
-  cursor.style.transform = `translate(${x}px, ${y}px)`;
-
-  // Update follower position with a slight delay
-  cursorFollower.style.transform = `translate(${x}px, ${y}px)`;
-});
-
-// Optional: Add hover effects for interactive elements
-document.querySelectorAll("a, button").forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-    cursor.style.width = "20px";
-    cursor.style.height = "20px";
-    cursorFollower.style.width = "40px";
-    cursorFollower.style.height = "40px";
-  });
-
-  el.addEventListener("mouseleave", () => {
-    cursor.style.width = "10px";
-    cursor.style.height = "10px";
-    cursorFollower.style.width = "30px";
-    cursorFollower.style.height = "30px";
-  });
-});
-
 // Dark mode functionality
 function initializeDarkMode() {
   const savedTheme = localStorage.getItem("theme") || "light";
